@@ -1,0 +1,177 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --cor-text: #ffffff; 
+    --cor-fundo: #000000;
+
+}
+
+body {
+    background-color: black;
+    margin: 5;
+    padding: 5;
+
+}
+
+h1,h2 {
+    color: azure; text-align: center; font-family: 'Rock Salt', cursive; /* Aplica a fonte Rock Salt aos títulos h1, h2, h3 */
+    font-weight: 400; /* Peso da fonte normal (400) */
+    font-style: normal; /* Estilo da fonte normal */
+}
+
+p {
+    color: azure; text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    height: 30%; width: 50%; 
+}
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.navbar {
+    background-color: #373737;
+    overflow: hidden;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    float: left;
+}
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 14px; /* Teste 14px 20px */
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive; /* Aplica a fonte Rock Salt aos títulos h1, h2, h3 */
+    font-weight: 400; /* Peso da fonte normal (400) */
+    font-style: normal; /* Estilo da fonte normal */
+}
+.navbar ul li a:houver {
+    background-color: azure;
+    color: rgb(95, 137, 217);
+}
+.content {
+    padding: 20px;
+    margin-top: 20px;
+}
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    color: #525252;
+    color: rgb(74, 75, 75); text-align: center; font-family: 'Rock Salt', cursive; /* Aplica a fonte Rock Salt aos títulos h1, h2, h3 */
+    font-weight: 400; /* Peso da fonte normal (400) */
+    font-style: normal;
+}
+
+footer {
+    background-color:rgb(82, 82, 82);
+    color: azure;
+    text-align: center;
+    padding: 19px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Teste */
+
+
+.card {
+    position: relative;
+    left: 300px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px 20px 10px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px;
+    transition: transform 01s ease;
+
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+    position: absolute;
+    width: 100%;
+    background-color: antiquewhite;
+    color: aqua;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(200%);
+    transition: transform 0.0s ease;
+    bottom: 0;
+}
+
+.card:hover .card-text {
+    transform: translateY(0);
+}
+
+.form-container {
+    background-color: #373737;
+}
+
+.form-container h3 {
+    text-align: center;
+
+    color: azure;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive; /* Aplica a fonte Rock Salt aos títulos h1, h2, h3 */
+    font-weight: 400; /* Peso da fonte normal (400) */
+    font-style: normal;
+}
+
+.form-container, .nome, .email, .telefone {
+    text-align: center;
+    padding: 1rem;
+    color: #f3f3f3;
+}
+
+.form-container h3 {
+    color: rgb(45, 98, 255);
+}
+
+form input {
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+textarea {
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+form button {
+    color: white;
+    background-color: #2543ee;
+    border-radius: 10px 20px 30px;
+    width: 5rem;
+    height: 2rem;
+}
